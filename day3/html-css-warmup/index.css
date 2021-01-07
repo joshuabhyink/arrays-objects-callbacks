@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 10px;
+    border: dashed rebeccapurple 5px;
+    display: inline-block;
+}
+
+.big-box {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+}
+
+.border-box{
+    border: black 5px dashed;
+    height: 150px;
+    width: 100%;
+    margin: 5px;
+
+}
+.small-box {
+    height: 35px;
+    width: 25px;
+}
+
+.medium-box {
+    margin-left: 45px;
+}
+
+.box-2 {
+    border-radius: 50%;
+    background-color: rosybrown;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 30px;
+    border: blueviolet dashed 2px;
+}

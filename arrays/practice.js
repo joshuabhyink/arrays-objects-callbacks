@@ -19,7 +19,10 @@ var arr = [10,20,30];
 
 //Code Here
 
-
+function first(arr){
+  return arr[0]
+}
+first(arr)
 
 ////////// PROBLEM 2 //////////
 
@@ -33,9 +36,11 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr){
+  return arr[2]
+}
 
-
-
+last(arr)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
@@ -48,8 +53,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
-
+function looper(family){
+  for(i = 0; i < family.length; i++) 
+  {alert(family[i])}
+  
+}
+looper(family)
 
 ////////// PROBLEM 4 //////////
 
@@ -63,9 +72,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+function reversedLooper(letters)
+// function started at the end of array, letter.length - 1 to countdown from the end, i >= 0 to stop at 0, 
+{
+  for(i = letters.length - 1; i >= 0; i--) 
+  {alert(letters[i])}
+}
 
-
-
+reversedLooper(letters)
+// reversedLooper(letters)
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
@@ -79,7 +94,19 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
-
+function evenFinder(nums){
+  let evenArray = []
+  //loop over every single num in nums array if it's even add to even array
+  for(let i = 0; i < nums.length; i++) {
+    if(nums[i] % 2 === 0){
+      evenArray.push(nums[i])
+    }
+  
+     
+  }
+     //array with only even numbers in it
+     return evenArray
+}
 
 
 
@@ -107,7 +134,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider(numbersArray){
+  let evenDivider = []
+  let oddDivider = []
+   for(i = 0; i < numbersArray.length; i++) {
+      if(numbersArray[i] % 2 === 0) {
+        evenDivider.push(numbersArray[i])
+      }
+      else {
+        oddDivider.push(numbersArray[i])
+      }
+   }
+   return [evenDivider, oddDivider]
+}
 
 
 ////////// PROBLEM 7 //////////

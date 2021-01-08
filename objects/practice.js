@@ -151,19 +151,20 @@ const methodCollection = {
 
 //Code Here
 function alertHello(methodCollection){
-  return 'hello'
+  alert(methodCollection.alertHello)
 }
-{alert(methodCollection.alertHello)}
+
 function logHello(methodCollection){
   console.log('hello')
 }
-{alert(methodCollection.logHello)}
+
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+alert(methodCollection.alertHello)
+console.log(methodCollection)
 ////////// PROBLEM 6 //////////
 
 /*

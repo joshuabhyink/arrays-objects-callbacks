@@ -102,7 +102,13 @@ multiply(4, 3, function(answer){
 //Code Here 
 
 function contains(array, name, callback){
-    if()
+  for(let i = 0; i < array.length; i++) {
+      if(array[i] === name) {
+        callback(true)
+      } else{callback(false)}
+    } 
+    
+
 }
 
 

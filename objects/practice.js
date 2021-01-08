@@ -15,6 +15,12 @@
 */
 
 //Code here
+const me = {
+  name: 'Josh',
+  age: 19,
+}
+{alert(me.name)}
+
 
 ////////// PROBLEM 2 //////////
 
@@ -25,6 +31,16 @@
 
 //Code here
 
+const favoriteThings = {
+  band: 'Hippocampus',
+  food: 'sushi/pizza',
+  book: 'Tale of Despereaux',
+  movie: 'any movie my girlfriend likes',
+  holiday: 'Valentines Day',
+  person: 'Sydney Michelle Thornton',
+}
+
+
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
@@ -32,12 +48,20 @@
 
 //Code here
 
+favoriteThings.car = 'Volkswagen TDI'
+favoriteThings.brand = 'again, anything that my girlfriend likes'
+
+
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
+
+
 
 ////////// PROBLEM 3 //////////
 
@@ -50,12 +74,22 @@
 */
 
 //Code here
+const backPack = {
+
+}
+const item = 'firstPocket'
+
+backPack.firstPocket = 'chapstick'
+backPack.color = 'brown'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+// {alert(backPack)}
+
+
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -64,6 +98,9 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack)
+
+
 
 ////////// PROBLEM 4 //////////
 
@@ -85,6 +122,14 @@ var user2 = {
 */
 
 //Code Here
+// const user3 = user2.slice(0,5)
+// user3.name = 'Bryan G. Smith'
+// user3.email = 'bryan.smith@devmounta.in'
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
+
+
+
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -96,14 +141,23 @@ var user2 = {
 */
 
 //Code Here
-
+const methodCollection = {
+  
+}
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
 //Code Here
-
+function alertHello(methodCollection){
+  return 'hello'
+}
+{alert(methodCollection.alertHello)}
+function logHello(methodCollection){
+  console.log('hello')
+}
+{alert(methodCollection.logHello)}
 /*
   Now call your alertHello and logHello methods.
 */
